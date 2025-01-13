@@ -1,13 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Randoverse</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+
+    <header>
+
+      <nav>
+
+        <a href="/">
+
+          Rando<span>verse</span>
+
+        </a>
+
+        <div >
+
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search Randoverse"
+
+          />
+
+        </div>
+
+        <ul>
+
+          <li>
+
+            <a href="/profile/">My Profile</a>
+
+          </li>
+
+          <li>
+
+            <a href="/post/create/">+ Create post</a></li>
+
+          </li>
+
+          <li>
+
+            <a href="/auth/login/">Login</a>
+
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+
+
+    <main>
+
+     
+
+      <section id="posts-wrapper" class="posts-wrapper"></section>
+
+      <div class="load-more-wrapper">
+
+        <div id="spinner" class="spinner hidden"></div>
+
+      </div>
+
+    </main>
+
   </body>
 </html>
