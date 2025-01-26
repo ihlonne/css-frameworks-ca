@@ -2,74 +2,165 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Randoverse</title>
+    <title>Login | Evergreen</title>
+    <script type="module" src="./src/main.js"></script>
   </head>
-  <body>
-
-    <header>
-
-      <nav>
-
-        <a href="/">
-
-          Rando<span>verse</span>
-
+  <body class="flex h-screen w-full justicy-center items-center">
+    <section class="flex justify-center items-center bg-gray-50 w-full h-full">
+      <div
+        class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0"
+      >
+        <a class="text-black text-2xl font-black font-logo mb-6" href="/">
+          Ever<span class="text-brand">green</span>
         </a>
-
-        <div >
-
-          <input
-            type="text"
-            id="search-input"
-            placeholder="Search Randoverse"
-
-          />
-
+        <div
+          id="sign-in-form"
+          class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1
+              class="text-xl font-bold leading-tight tracking-tight text-darkest md:text-2xl dark:text-white"
+            >
+              Sign in to your account
+            </h1>
+            <form class="space-y-4 md:space-y-6" action="profile">
+              <div>
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="sign-up-email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@stud.noroff.no"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="password"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="sign-in-password"
+                  minlength="8"
+                  placeholder="••••••••"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required
+                />
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-start mb-6">
+                  <div class="flex items-center h-5">
+                    <input
+                      id="remember"
+                      aria-describedby="remember"
+                      type="checkbox"
+                      class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                      required=""
+                    />
+                  </div>
+                  <div class="ml-3 text-sm">
+                    <label
+                      for="remember"
+                      class="text-gray-500 dark:text-gray-300"
+                      >Remember me</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <submit
+                id="sign-in-button"
+                type="submit"
+                class="w-full text-white bg-brand focus:ring-4 focus:outline-none cursor-pointer focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              >
+                Sign in
+              </submit>
+              <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                Don't have an account yet?
+                <a
+                  id="show-register"
+                  href="#"
+                  class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >Sign up</a
+                >
+              </p>
+            </form>
+          </div>
         </div>
 
-        <ul>
-
-          <li>
-
-            <a href="/profile/">My Profile</a>
-
-          </li>
-
-          <li>
-
-            <a href="/post/create/">+ Create post</a></li>
-
-          </li>
-
-          <li>
-
-            <a href="/auth/login/">Login</a>
-
-          </li>
-
-        </ul>
-
-      </nav>
-
-    </header>
-
-
-
-    <main>
-
-     
-
-      <section id="posts-wrapper" class="posts-wrapper"></section>
-
-      <div class="load-more-wrapper">
-
-        <div id="spinner" class="spinner hidden"></div>
-
+        <div
+          id="register-form"
+          class="hidden w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
+        >
+          <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+            <h1
+              class="text-xl font-bold leading-tight tracking-tight text-darkest md:text-2xl dark:text-white"
+            >
+              Sign up with a new account
+            </h1>
+            <form class="space-y-4 md:space-y-6" action="profile">
+              <div>
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="-register-email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="name@stud.noroff.no"
+                  required=""
+                />
+              </div>
+              <div>
+                <label
+                  for="password"
+                  class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  name="password"
+                  id="register-password"
+                  minlength="8"
+                  placeholder="••••••••"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  required=""
+                />
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-start mb-6"></div>
+              </div>
+              <submit
+                id="register-button"
+                type="submit"
+                class="w-full text-white cursor-pointer bg-brand focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+              >
+                Register
+              </submit>
+              <p class="text-sm font-light text-gray-500 dark:text-gray-400">
+                Already have an account?
+                <a
+                  id="show-sign-in"
+                  href="#"
+                  class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                  >Sign in</a
+                >
+              </p>
+            </form>
+          </div>
+        </div>
       </div>
-
-    </main>
-
+    </section>
   </body>
 </html>

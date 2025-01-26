@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <title>Your profile | Evergreen</title>
+    <script type="module" src="../src/main.js"></script>
+  </head>
+  <body class="box-border flex flex-col">
+    <header>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a class="text-white text-2xl font-black font-logo" href="/feed/">
+            Ever<span class="text-brand">green</span>
+          </a>
+          <button
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              id="hamburger"
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar">
+            <button
+              id="close-navbar"
+              class="hidden absolute top-4 right-4 p-2 rounded focus:outline-none"
+              aria-label="Close Menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-6 h-6 text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="../feed/"
+                  class="block py-2 px-3 text-white rounded md:text-brand md:p-0 dark:text-white"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/profile/"
+                  class="block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-brand md:p-0 dark:text-white md:dark:hover:text-brand dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../create-post/"
+                  class="block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-brand md:p-0 dark:text-white md:dark:hover:text-brand dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Create Post</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-brand md:p-0 dark:text-white md:dark:hover:text-brand dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  href="../auth/login/"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex flex-col m-auto justify-center align-center h-vh w-full">
+      <section
+        class="bg-white dark:bg-gray-800 shadow-2xl w-full p-8 transition-all duration-300 animate-fade-in"
+      >
+        <div
+          class="flex justify-center items-center flex-col lg:flex-row text-center lg:text-left"
+        >
+          <div class="text-center mb-8 md:mb-0">
+            <div class="w-24 h-24 md:w-32 md:h-32 lg:w-48 lg:h-48">
+              <img
+                src="https://images.pexels.com/photos/20746998/pexels-photo-20746998/free-photo-of-echeveria-elegans-in-a-pot.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Profile Picture"
+                class="rounded-full w-full h-full object-cover mx-auto mb-4 border-4 border-brand dark:border-brand transition-transform duration-300 hover:scale-105"
+              />
+            </div>
+          </div>
+          <div class="lg:w-1/2 md:pl-8">
+            <div
+              class="flex flex-col md:flex-row lg:flex-row justify-start gap-2 items-center"
+            >
+              <h2 class="text-2xl font-bold text-brand dark:text-white">
+                mossboss
+              </h2>
+              <div class="ml-5">
+                <button
+                  class="mr-2 bg-brand text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300"
+                >
+                  Follow
+                </button>
+                <button
+                  class="bg-gray-600 text-white px-4 py-2 rounded-lg hover:bg-blue-900 transition-colors duration-300"
+                >
+                  Message
+                </button>
+              </div>
+            </div>
+            <div class="inline-flex gap-5 mt-5 bold text-white">
+              <span>192 followers</span>
+              <span>54 following</span>
+            </div>
+            <p class="text-gray-700 dark:text-gray-300 mt-6">
+              Bloom where you're planted 🌼 Sharing my leafy adventures 🪴💚
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="posts-wrapper" class="w-full flex justify-center p-8">
+        <div class="flex justify-between items-center w-full">
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-4 mx-auto">
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/4272618/pexels-photo-4272618.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/9707353/pexels-photo-9707353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/4270161/pexels-photo-4270161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/16728140/pexels-photo-16728140/free-photo-of-plants-in-flowerpots-on-shelves.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/17665057/pexels-photo-17665057/free-photo-of-potted-plants-in-a-room.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/3050832/pexels-photo-3050832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+
+            <div class="max-w-sm rounded-lg overflow-hidden shadow-lg">
+              <div class="w-full h-80">
+                <img
+                  class="w-full h-full object-cover"
+                  src="https://images.pexels.com/photos/4273348/pexels-photo-4273348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Sunset in the mountains"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

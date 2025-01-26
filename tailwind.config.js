@@ -1,14 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts}'], // Scan HTML and TypeScript files
+  content: [
+    './index.html',
+    './feed/**/*.html',
+    './profile/**/*.html',
+    './create-post/**/*.html',
+    './src/**/*.{js, html}',
+  ],
   theme: {
     extend: {
       colors: {
-        brand: '#fd4d8e',
-        darkest: '#0a0c0e',
-        dark: '#383a3d',
-        mid: '#b8bfc6',
-        light: '#d6dee7',
+        brand: '#78a389',
+        darkest: '#2f2f3d',
+        dark: '#5e5e7a',
+        mid: '#9191a9',
+        light: '#d3d3ee',
         lightest: 'fff',
       },
       fontFamily: {
