@@ -73,3 +73,35 @@ npm install
 npm run dev
 npm run build
 ```
+
+### 2. Move into the Repository
+
+```bash
+cd social-media-app
+```
+
+### 3. Installation
+
+```bash
+npm install
+```
+
+###. 4. Run Project Locally
+
+```bash
+npm run dev
+```
+
+###. 5. Build for Production
+
+```bash
+npm run build
+```
+
+## 👩‍💻 Author
+
+**Ingelinn Helene Lønne**  
+Front-End Development graduate from Noroff
+
+- 🌐 Portfolio: [ihlonne.netlify.app](https://ihlonne.netlify.app)
+- 💼 LinkedIn: [linkedin.com/in/ingelinnhelenelonne](https://linkedin.com/in/ingelinnhelenelonne)
