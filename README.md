@@ -86,13 +86,13 @@ cd social-media-app
 npm install
 ```
 
-###. 4. Run Project Locally
+### 4. Run Project Locally
 
 ```bash
 npm run dev
 ```
 
-###. 5. Build for Production
+### 5. Build for Production
 
 ```bash
 npm run build
